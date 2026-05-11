@@ -1,0 +1,68 @@
+{
+  "site": {
+    "title": "FinCalcHub - Calculateurs Financiers Gratuits",
+    "description": "Calculateurs financiers gratuits pour prêts hypothécaires, investissements, retraite, dettes, impôts et plus.",
+    "tagline": "Calculateurs Financiers Gratuits pour des Décisions Intelligentes"
+  },
+  "nav": {
+    "home": "Accueil",
+    "calculators": "Calculateurs",
+    "blog": "Blog",
+    "about": "À propos",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "search_placeholder": "Rechercher...",
+    "language": "Langue"
+  },
+  "home": {
+    "hero_title": "Calculateurs Financiers Gratuits",
+    "hero_subtitle": "Plus de 40 calculateurs pour de meilleures décisions financières. Prêts, investissements, retraite, dettes et plus.",
+    "featured_title": "Calculateurs les Plus Populaires",
+    "categories_title": "Parcourir par Catégorie",
+    "why_title": "Pourquoi FinCalcHub ?",
+    "why_free": "100% Gratuit - Aucune inscription requise.",
+    "why_accurate": "Précis et Fiable - Formules financières standard.",
+    "why_privacy": "Confidentialité - Vos données restent dans votre navigateur.",
+    "why_sharing": "Partage Facile - Partagez les résultats par URL."
+  },
+  "categories": {
+    "mortgage": "Prêt Immobilier",
+    "mortgage_desc": "Mensualités, amortissement, refinancement et capacité d'emprunt.",
+    "investment": "Investissement et Retraite",
+    "investment_desc": "Intérêts composés, plan retraite, FIRE et rendements.",
+    "debt": "Prêts et Dettes",
+    "debt_desc": "Prêts auto, personnels, étudiants et stratégies de remboursement.",
+    "savings": "Épargne",
+    "savings_desc": "Objectifs d'épargne, fonds d'urgence, dépôts à terme et études.",
+    "credit_card": "Cartes de Crédit",
+    "credit_card_desc": "Remboursement, transfert de solde et comparaison de récompenses.",
+    "tax": "Impôts",
+    "tax_desc": "Estimation d'impôts, plus-values et TVA.",
+    "business": "Entreprise",
+    "business_desc": "ROI, VAN, seuil de rentabilité et investissement locatif.",
+    "currency": "Devises et Inflation",
+    "currency_desc": "Convertisseur de devises, inflation et frais de change."
+  },
+  "layout": {
+    "inputs": "Entrées",
+    "results": "Résultats",
+    "schedule": "Tableau d'Amortissement",
+    "chart": "Graphique",
+    "calculate": "Calculer",
+    "reset": "Réinitialiser",
+    "sharing": "Partager ce calculateur",
+    "recommended_tools": "Outils Recommandés",
+    "affiliate_disclosure": "Certains liens sont des liens d'affiliation. Nous pouvons recevoir une commission.",
+    "sponsored": "Annonce",
+    "chart_title": "Solde au Fil du Temps"
+  },
+  "footer": {
+    "copyright": "© 2026 FinCalcHub. Tous droits réservés.",
+    "disclaimer": "Les calculateurs sont informatifs uniquement. Consultez un conseiller financier.",
+    "made_with": "Fait avec ♥ pour votre réussite financière"
+  },
+  "blog": {
+    "title": "Blog des Calculateurs Financiers",
+    "description": "Guides, conseils et informations pour de meilleures décisions financières."
+  }
+}

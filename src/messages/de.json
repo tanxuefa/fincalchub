@@ -1,0 +1,68 @@
+{
+  "site": {
+    "title": "FinCalcHub - Kostenlose Finanzrechner",
+    "description": "Kostenlose Online-Finanzrechner für Hypotheken, Investitionen, Rente, Schulden, Steuern und mehr.",
+    "tagline": "Kostenlose Finanzrechner für kluge Geldentscheidungen"
+  },
+  "nav": {
+    "home": "Start",
+    "calculators": "Rechner",
+    "blog": "Blog",
+    "about": "Über uns",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "search_placeholder": "Rechner durchsuchen...",
+    "language": "Sprache"
+  },
+  "home": {
+    "hero_title": "Kostenlose Finanzrechner",
+    "hero_subtitle": "Über 40 Rechner für bessere Finanzentscheidungen. Hypotheken, Geldanlage, Rente, Schuldenabbau und mehr.",
+    "featured_title": "Beliebteste Rechner",
+    "categories_title": "Nach Kategorie durchsuchen",
+    "why_title": "Warum FinCalcHub?",
+    "why_free": "100% Kostenlos - Keine Anmeldung nötig.",
+    "why_accurate": "Genau & Zuverlässig - Standard-Finanzformeln.",
+    "why_privacy": "Datenschutz - Ihre Daten bleiben im Browser.",
+    "why_sharing": "Einfaches Teilen - Ergebnisse per URL teilen."
+  },
+  "categories": {
+    "mortgage": "Hypothek & Immobilien",
+    "mortgage_desc": "Monatliche Raten, Tilgung, Refinanzierung und Erschwinglichkeit.",
+    "investment": "Geldanlage & Rente",
+    "investment_desc": "Zinseszins, Rentenplanung, FIRE und Renditen.",
+    "debt": "Kredite & Schulden",
+    "debt_desc": "Autokredite, Privatkredite, Studienkredite und Schuldenstrategien.",
+    "savings": "Sparen",
+    "savings_desc": "Sparziele, Notgroschen, Festgeld und Studienfonds.",
+    "credit_card": "Kreditkarten",
+    "credit_card_desc": "Tilgungsrechner, Saldenübertrag und Prämienvergleich.",
+    "tax": "Steuern",
+    "tax_desc": "Einkommensteuer, Kapitalertragsteuer und Mehrwertsteuer.",
+    "business": "Unternehmen",
+    "business_desc": "ROI, Kapitalwert, Break-Even und Immobilieninvestitionen.",
+    "currency": "Währung & Inflation",
+    "currency_desc": "Währungsrechner, Inflationsrechner und Wechselgebühren."
+  },
+  "layout": {
+    "inputs": "Eingaben",
+    "results": "Ergebnisse",
+    "schedule": "Tilgungsplan",
+    "chart": "Diagramm",
+    "calculate": "Berechnen",
+    "reset": "Zurücksetzen",
+    "sharing": "Diesen Rechner teilen",
+    "recommended_tools": "Empfohlene Tools",
+    "affiliate_disclosure": "Einige Links sind Affiliate-Links. Wir erhalten ggf. eine Provision.",
+    "sponsored": "Anzeige",
+    "chart_title": "Saldo im Zeitverlauf"
+  },
+  "footer": {
+    "copyright": "© 2026 FinCalcHub. Alle Rechte vorbehalten.",
+    "disclaimer": "Alle Rechner dienen nur zu Informationszwecken. Konsultieren Sie einen Finanzberater.",
+    "made_with": "Gemacht mit ♥ für Ihren finanziellen Erfolg"
+  },
+  "blog": {
+    "title": "Finanzrechner-Blog",
+    "description": "Anleitungen, Tipps und Einblicke für bessere Finanzentscheidungen."
+  }
+}

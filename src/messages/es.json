@@ -1,0 +1,68 @@
+{
+  "site": {
+    "title": "FinCalcHub - Calculadoras Financieras Gratuitas",
+    "description": "Calculadoras financieras gratuitas para hipotecas, inversiones, jubilación, deudas, impuestos y más.",
+    "tagline": "Calculadoras Financieras Gratuitas para Decisiones Inteligentes"
+  },
+  "nav": {
+    "home": "Inicio",
+    "calculators": "Calculadoras",
+    "blog": "Blog",
+    "about": "Acerca de",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "search_placeholder": "Buscar calculadoras...",
+    "language": "Idioma"
+  },
+  "home": {
+    "hero_title": "Calculadoras Financieras Gratuitas",
+    "hero_subtitle": "Más de 40 calculadoras para tomar mejores decisiones financieras. Hipotecas, inversiones, jubilación, deudas y más.",
+    "featured_title": "Calculadoras Más Populares",
+    "categories_title": "Explorar por Categoría",
+    "why_title": "¿Por Qué Usar FinCalcHub?",
+    "why_free": "100% Gratis - Sin registro. Todas las calculadoras son gratuitas.",
+    "why_accurate": "Precisas y Fiables - Fórmulas financieras estándar.",
+    "why_privacy": "Privacidad - Tus datos nunca salen de tu navegador.",
+    "why_sharing": "Compartir Fácil - Comparte resultados mediante URL."
+  },
+  "categories": {
+    "mortgage": "Hipotecas e Inmuebles",
+    "mortgage_desc": "Calcula pagos mensuales, amortización, refinanciamiento y asequibilidad.",
+    "investment": "Inversiones y Jubilación",
+    "investment_desc": "Interés compuesto, plan de jubilación, FIRE y rendimientos.",
+    "debt": "Préstamos y Deudas",
+    "debt_desc": "Préstamos de auto, personales, estudiantiles y estrategias de pago.",
+    "savings": "Ahorros",
+    "savings_desc": "Metas de ahorro, fondos de emergencia, CDs y ahorro universitario.",
+    "credit_card": "Tarjetas de Crédito",
+    "credit_card_desc": "Pago de tarjetas, transferencias de saldo y comparación de recompensas.",
+    "tax": "Impuestos",
+    "tax_desc": "Estimadores de impuestos, ganancias de capital e IVA.",
+    "business": "Negocios",
+    "business_desc": "ROI, VAN, punto de equilibrio e inversiones inmobiliarias.",
+    "currency": "Divisas e Inflación",
+    "currency_desc": "Conversor de divisas, calculadora de inflación y comisiones de cambio."
+  },
+  "layout": {
+    "inputs": "Entradas",
+    "results": "Resultados",
+    "schedule": "Tabla de Amortización",
+    "chart": "Gráfico",
+    "calculate": "Calcular",
+    "reset": "Restablecer",
+    "sharing": "Compartir esta calculadora",
+    "recommended_tools": "Herramientas Recomendadas",
+    "affiliate_disclosure": "Algunos enlaces son de afiliados. Podemos ganar una comisión.",
+    "sponsored": "Anuncio",
+    "chart_title": "Saldo a lo Largo del Tiempo"
+  },
+  "footer": {
+    "copyright": "© 2026 FinCalcHub. Todos los derechos reservados.",
+    "disclaimer": "Las calculadoras son solo informativas. Consulte a un asesor financiero.",
+    "made_with": "Hecho con ♥ para tu éxito financiero"
+  },
+  "blog": {
+    "title": "Blog de Calculadoras Financieras",
+    "description": "Guías, consejos e información para mejores decisiones financieras."
+  }
+}
