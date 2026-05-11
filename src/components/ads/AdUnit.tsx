@@ -52,13 +52,6 @@ export default function AdUnit({ slot, format }: AdUnitProps) {
     } catch {
       // AdSense not available (ad blocker, dev mode, etc.)
     }
-
-    // In production: uncomment and add real AdSense pub ID in next.config.ts
-    // const script = document.createElement('script');
-    // script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
-    // script.async = true;
-    // script.crossOrigin = 'anonymous';
-    // if (adRef.current) adRef.current.appendChild(script);
   }, [adVisible, adLoaded]);
 
   const formatStyles = {
@@ -77,7 +70,7 @@ export default function AdUnit({ slot, format }: AdUnitProps) {
           {/* Real AdSense code - replace in production */}
           <ins
             className="adsbygoogle block"
-            data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" // Replace with real pub ID
+            data-ad-client="ca-pub-7163013428197750"
             data-ad-slot={AD_SLOTS[slot]}
             data-ad-format="auto"
             data-full-width-responsive="true"
