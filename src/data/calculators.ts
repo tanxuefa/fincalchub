@@ -1,7 +1,8 @@
 export interface CalculatorMeta {
   slug: string;
-  nameKey: string; // i18n key
+  nameKey: string;
   descriptionKey: string;
+  keywords: string[];
   category: string;
   icon: string;
   inputs: { name: string; labelKey: string; type: 'number' | 'select' | 'percent'; defaultValue?: number | string; options?: { value: string; labelKey: string }[] }[];
@@ -20,11 +21,12 @@ export const calculatorCategories = [
 ] as const;
 
 export const calculators: CalculatorMeta[] = [
-  // Mortgage & Real Estate
+  // ==================== Mortgage & Real Estate ====================
   {
     slug: 'mortgage-payment',
     nameKey: 'calculators.mortgage_payment',
     descriptionKey: 'calculators.mortgage_payment_desc',
+    keywords: ['mortgage calculator', 'monthly mortgage payment', 'home loan calculator', 'mortgage payment estimator', 'calculate mortgage', 'house payment calculator', 'PITI calculator', 'mortgage rate calculator'],
     category: 'mortgage',
     icon: '🏠',
     inputs: [
@@ -48,6 +50,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'mortgage-amortization',
     nameKey: 'calculators.amortization',
     descriptionKey: 'calculators.amortization_desc',
+    keywords: ['amortization schedule', 'mortgage amortization', 'loan amortization calculator', 'extra payment calculator', 'mortgage payoff early', 'principal and interest breakdown', 'amortization table'],
     category: 'mortgage',
     icon: '📊',
     inputs: [
@@ -67,6 +70,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'refinance',
     nameKey: 'calculators.refinance',
     descriptionKey: 'calculators.refinance_desc',
+    keywords: ['refinance calculator', 'mortgage refinance', 'should I refinance', 'refinance break even', 'mortgage refinance savings', 'lower mortgage rate', 'refinance closing costs'],
     category: 'mortgage',
     icon: '🔄',
     inputs: [
@@ -89,6 +93,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'home-affordability',
     nameKey: 'calculators.affordability',
     descriptionKey: 'calculators.affordability_desc',
+    keywords: ['how much house can I afford', 'home affordability calculator', 'mortgage affordability', 'house buying budget', 'DTI ratio calculator', 'income based home price', 'first time home buyer calculator'],
     category: 'mortgage',
     icon: '💰',
     inputs: [
@@ -108,6 +113,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'rent-vs-buy',
     nameKey: 'calculators.rent_vs_buy',
     descriptionKey: 'calculators.rent_vs_buy_desc',
+    keywords: ['rent vs buy calculator', 'should I rent or buy', 'renting vs buying a home', 'buy vs rent analysis', 'home ownership cost calculator', 'rent or buy decision', 'is it better to rent or buy'],
     category: 'mortgage',
     icon: '⚖️',
     inputs: [
@@ -125,11 +131,13 @@ export const calculators: CalculatorMeta[] = [
       { labelKey: 'results.net_difference', key: 'difference' },
     ],
   },
-  // Investment
+
+  // ==================== Investment & Retirement ====================
   {
     slug: 'compound-interest',
     nameKey: 'calculators.compound_interest',
     descriptionKey: 'calculators.compound_interest_desc',
+    keywords: ['compound interest calculator', 'investment growth calculator', 'compound interest formula', 'interest calculator', 'investment returns calculator', 'savings growth calculator', 'compound earnings calculator', 'long term investment calculator'],
     category: 'investment',
     icon: '📈',
     inputs: [
@@ -149,6 +157,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'retirement',
     nameKey: 'calculators.retirement',
     descriptionKey: 'calculators.retirement_desc',
+    keywords: ['retirement calculator', '401k calculator', 'IRA calculator', 'retirement savings', 'retirement planning', 'how much to retire', 'retirement income calculator', 'employer match calculator', 'retirement nest egg'],
     category: 'investment',
     icon: '👴',
     inputs: [
@@ -171,6 +180,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'cagr',
     nameKey: 'calculators.cagr',
     descriptionKey: 'calculators.cagr_desc',
+    keywords: ['CAGR calculator', 'compound annual growth rate', 'investment return calculator', 'annualized return', 'stock return calculator', 'portfolio return', 'investment performance calculator'],
     category: 'investment',
     icon: '📉',
     inputs: [
@@ -188,6 +198,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'dca',
     nameKey: 'calculators.dca',
     descriptionKey: 'calculators.dca_desc',
+    keywords: ['dollar cost averaging calculator', 'DCA calculator', 'regular investing calculator', 'monthly investment plan', 'systematic investment', 'ETF investing calculator', 'index fund calculator'],
     category: 'investment',
     icon: '📅',
     inputs: [
@@ -206,6 +217,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'fire',
     nameKey: 'calculators.fire',
     descriptionKey: 'calculators.fire_desc',
+    keywords: ['FIRE calculator', 'financial independence retire early', 'FIRE number', 'early retirement calculator', 'financial freedom calculator', 'lean FIRE', 'fat FIRE', 'coast FIRE', 'FIRE movement'],
     category: 'investment',
     icon: '🔥',
     inputs: [
@@ -227,6 +239,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'drip',
     nameKey: 'calculators.drip',
     descriptionKey: 'calculators.drip_desc',
+    keywords: ['dividend reinvestment calculator', 'DRIP calculator', 'dividend calculator', 'dividend growth calculator', 'reinvest dividends', 'dividend stock calculator', 'compound dividends'],
     category: 'investment',
     icon: '💧',
     inputs: [
@@ -242,11 +255,13 @@ export const calculators: CalculatorMeta[] = [
       { labelKey: 'results.final_shares', key: 'shares' },
     ],
   },
-  // Debt & Loan
+
+  // ==================== Loan & Debt ====================
   {
     slug: 'auto-loan',
     nameKey: 'calculators.auto_loan',
     descriptionKey: 'calculators.auto_loan_desc',
+    keywords: ['auto loan calculator', 'car loan calculator', 'car payment calculator', 'auto financing', 'car loan interest', 'vehicle loan calculator', 'monthly car payment', 'car affordability'],
     category: 'debt',
     icon: '🚗',
     inputs: [
@@ -268,6 +283,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'personal-loan',
     nameKey: 'calculators.personal_loan',
     descriptionKey: 'calculators.personal_loan_desc',
+    keywords: ['personal loan calculator', 'personal loan payment', 'loan calculator', 'unsecured loan', 'personal loan interest', 'monthly loan payment', 'loan repayment calculator'],
     category: 'debt',
     icon: '💵',
     inputs: [
@@ -287,6 +303,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'student-loan',
     nameKey: 'calculators.student_loan',
     descriptionKey: 'calculators.student_loan_desc',
+    keywords: ['student loan calculator', 'student loan repayment', 'income driven repayment', 'IDR calculator', 'student debt calculator', 'college loan', 'federal student loan', 'loan forgiveness'],
     category: 'debt',
     icon: '🎓',
     inputs: [
@@ -307,6 +324,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'debt-payoff',
     nameKey: 'calculators.debt_payoff',
     descriptionKey: 'calculators.debt_payoff_desc',
+    keywords: ['debt payoff calculator', 'debt snowball', 'debt avalanche', 'get out of debt', 'debt repayment plan', 'credit card debt payoff', 'debt free calculator', 'pay off debt faster'],
     category: 'debt',
     icon: '📋',
     inputs: [
@@ -324,6 +342,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'apr',
     nameKey: 'calculators.apr',
     descriptionKey: 'calculators.apr_desc',
+    keywords: ['APR calculator', 'annual percentage rate', 'loan APR', 'effective interest rate', 'real cost of loan', 'APR vs interest rate', 'calculate APR'],
     category: 'debt',
     icon: '📐',
     inputs: [
@@ -339,11 +358,13 @@ export const calculators: CalculatorMeta[] = [
       { labelKey: 'results.total_cost', key: 'totalPayment' },
     ],
   },
-  // Savings
+
+  // ==================== Savings ====================
   {
     slug: 'savings-goal',
     nameKey: 'calculators.savings_goal',
     descriptionKey: 'calculators.savings_goal_desc',
+    keywords: ['savings goal calculator', 'save money calculator', 'savings target', 'reach savings goal', 'how long to save', 'savings plan calculator', 'financial goal calculator'],
     category: 'savings',
     icon: '🎯',
     inputs: [
@@ -363,6 +384,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'emergency-fund',
     nameKey: 'calculators.emergency_fund',
     descriptionKey: 'calculators.emergency_fund_desc',
+    keywords: ['emergency fund calculator', 'how much emergency fund', 'rainy day fund', 'emergency savings', '3 6 9 month rule', 'financial safety net', 'emergency fund target'],
     category: 'savings',
     icon: '🆘',
     inputs: [
@@ -382,6 +404,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'cd-calculator',
     nameKey: 'calculators.cd',
     descriptionKey: 'calculators.cd_desc',
+    keywords: ['CD calculator', 'certificate of deposit', 'CD rates', 'term deposit calculator', 'CD interest calculator', 'fixed deposit calculator', 'CD ladder', 'best CD rates'],
     category: 'savings',
     icon: '🏦',
     inputs: [
@@ -400,6 +423,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'college-529',
     nameKey: 'calculators.college_529',
     descriptionKey: 'calculators.college_529_desc',
+    keywords: ['529 plan calculator', 'college savings calculator', 'education savings', 'college cost calculator', 'save for college', '529 college savings plan', 'university tuition calculator'],
     category: 'savings',
     icon: '🎓',
     inputs: [
@@ -418,11 +442,13 @@ export const calculators: CalculatorMeta[] = [
       { labelKey: 'results.monthly_needed', key: 'monthlyNeededToCloseGap' },
     ],
   },
-  // Credit Card
+
+  // ==================== Credit Card ====================
   {
     slug: 'credit-card-payoff',
     nameKey: 'calculators.credit_card_payoff',
     descriptionKey: 'calculators.credit_card_payoff_desc',
+    keywords: ['credit card payoff calculator', 'pay off credit card', 'credit card debt', 'minimum payment calculator', 'credit card interest', 'how long to pay off card', 'credit card repayment'],
     category: 'credit-card',
     icon: '💳',
     inputs: [
@@ -441,6 +467,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'balance-transfer',
     nameKey: 'calculators.balance_transfer',
     descriptionKey: 'calculators.balance_transfer_desc',
+    keywords: ['balance transfer calculator', '0 APR transfer', 'credit card balance transfer', 'transfer credit card debt', 'balance transfer savings', 'should I transfer balance', 'balance transfer fee calculator'],
     category: 'credit-card',
     icon: '↔️',
     inputs: [
@@ -459,11 +486,13 @@ export const calculators: CalculatorMeta[] = [
       { labelKey: 'results.interest_without', key: 'interestWithout' },
     ],
   },
-  // Tax
+
+  // ==================== Tax ====================
   {
     slug: 'us-tax',
     nameKey: 'calculators.us_tax',
     descriptionKey: 'calculators.us_tax_desc',
+    keywords: ['tax calculator', 'income tax estimator', 'federal tax calculator', 'tax bracket calculator', 'take home pay calculator', 'US tax 2026', 'tax refund estimator', 'marginal tax rate'],
     category: 'tax',
     icon: '🇺🇸',
     inputs: [
@@ -486,6 +515,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'capital-gains',
     nameKey: 'calculators.capital_gains',
     descriptionKey: 'calculators.capital_gains_desc',
+    keywords: ['capital gains tax calculator', 'stock profit tax', 'investment tax calculator', 'short term vs long term capital gains', 'capital gains rate', 'calculate capital gains tax', 'asset sale tax'],
     category: 'tax',
     icon: '📊',
     inputs: [
@@ -507,6 +537,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'vat',
     nameKey: 'calculators.vat',
     descriptionKey: 'calculators.vat_desc',
+    keywords: ['VAT calculator', 'value added tax', 'sales tax calculator', 'EU VAT', 'tax included price', 'net price calculator', 'gross price calculator', 'VAT rate by country'],
     category: 'tax',
     icon: '🧾',
     inputs: [
@@ -521,11 +552,13 @@ export const calculators: CalculatorMeta[] = [
       { labelKey: 'results.total', key: 'total' },
     ],
   },
-  // Business
+
+  // ==================== Business ====================
   {
     slug: 'roi',
     nameKey: 'calculators.roi',
     descriptionKey: 'calculators.roi_desc',
+    keywords: ['ROI calculator', 'return on investment', 'investment returns', 'ROI formula', 'business investment calculator', 'calculate ROI', 'payback period'],
     category: 'business',
     icon: '💹',
     inputs: [
@@ -545,6 +578,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'rental-property',
     nameKey: 'calculators.rental_property',
     descriptionKey: 'calculators.rental_property_desc',
+    keywords: ['rental property calculator', 'real estate investment', 'rental income calculator', 'cap rate calculator', 'cash on cash return', 'landlord calculator', 'investment property analysis', 'rental ROI'],
     category: 'business',
     icon: '🏘️',
     inputs: [
@@ -568,6 +602,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'break-even',
     nameKey: 'calculators.break_even',
     descriptionKey: 'calculators.break_even_desc',
+    keywords: ['break even calculator', 'break even analysis', 'break even point', 'business profitability', 'cost analysis', 'contribution margin', 'unit economics'],
     category: 'business',
     icon: '⚖️',
     inputs: [
@@ -586,6 +621,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'npv',
     nameKey: 'calculators.npv',
     descriptionKey: 'calculators.npv_desc',
+    keywords: ['NPV calculator', 'net present value', 'IRR calculator', 'internal rate of return', 'investment analysis', 'discounted cash flow', 'DCF calculator', 'capital budgeting'],
     category: 'business',
     icon: '📊',
     inputs: [
@@ -599,11 +635,13 @@ export const calculators: CalculatorMeta[] = [
       { labelKey: 'results.is_positive', key: 'isPositive' },
     ],
   },
-  // Currency
+
+  // ==================== Currency & Inflation ====================
   {
     slug: 'currency-converter',
     nameKey: 'calculators.currency_converter',
     descriptionKey: 'calculators.currency_converter_desc',
+    keywords: ['currency converter', 'exchange rate calculator', 'convert currency', 'USD to EUR', 'foreign exchange', 'money converter', 'international currency converter'],
     category: 'currency',
     icon: '💱',
     inputs: [
@@ -625,6 +663,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'inflation',
     nameKey: 'calculators.inflation',
     descriptionKey: 'calculators.inflation_desc',
+    keywords: ['inflation calculator', 'CPI calculator', 'purchasing power', 'inflation rate', 'historical inflation', 'money value over time', 'cost of living calculator', 'inflation adjusted'],
     category: 'currency',
     icon: '📈',
     inputs: [
@@ -644,6 +683,7 @@ export const calculators: CalculatorMeta[] = [
     slug: 'exchange-fee',
     nameKey: 'calculators.exchange_fee',
     descriptionKey: 'calculators.exchange_fee_desc',
+    keywords: ['exchange fee calculator', 'international money transfer', 'hidden fees', 'Wise vs bank', 'currency transfer fees', 'send money abroad', 'remittance calculator', 'exchange rate markup'],
     category: 'currency',
     icon: '💸',
     inputs: [

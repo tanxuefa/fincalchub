@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "FinCalcHub - Free Financial Calculators",
   description: "Free online financial calculators for mortgages, investments, retirement, debt, taxes and more. Make smarter money decisions.",
   icons: { icon: "/favicon.ico" },
+  verification: {
+    google: "P0shTJ8H8NgfGjWj3rTLuLy00PV5LStZCfwLwecF0lw",
+  },
 };
 
 export default function RootLayout({

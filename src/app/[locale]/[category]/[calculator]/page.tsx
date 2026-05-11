@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${calc.nameKey} - FinCalcHub`,
     description: calc.descriptionKey,
+    keywords: calc.keywords,
     alternates: {
       canonical: url,
       languages: {
